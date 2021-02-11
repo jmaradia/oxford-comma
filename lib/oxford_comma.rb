@@ -1,3 +1,17 @@
-def oxford_comma(array)
 
+def oxford_comma(array)
+ case array.size
+when 0
+    ""
+when 1
+    array.first
+when 2
+    array.join(' and ')
+else  
+    array[-1].insert(0,'and ')
+    puts array
+  array.join(', ')
+
+
+end
 end
